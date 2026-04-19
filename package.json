@@ -1,0 +1,26 @@
+{
+  "name": "skillhub",
+  "version": "1.0.0",
+  "description": "OpenClaw Skill Discovery & Management Platform",
+  "main": "src/index.js",
+  "bin": {
+    "skillhub": "./bin/skillhub.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "openclaw",
+    "skills",
+    "ai-agents",
+    "automation",
+    "cli"
+  ],
+  "author": "btcnai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btcnai/skillhub"
+  }
+}
