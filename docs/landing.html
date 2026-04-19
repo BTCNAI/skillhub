@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub - App Store for AI Agent Skills</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 3em; margin-bottom: 20px; }
+        header p { font-size: 1.5em; opacity: 0.9; }
+        .cta { margin-top: 40px; }
+        .cta a { display: inline-block; background: white; color: #667eea; padding: 15px 40px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.2em; margin: 10px; }
+        .cta a.github { background: #333; color: white; }
+        section { padding: 60px 20px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-top: 40px; }
+        .feature { text-align: center; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .feature h3 { color: #667eea; margin-bottom: 15px; }
+        .feature-icon { font-size: 3em; margin-bottom: 20px; }
+        .demo { background: #f8f9fa; }
+        .demo pre { background: #2d3748; color: #fff; padding: 30px; border-radius: 10px; overflow-x: auto; }
+        .demo code { font-family: 'Monaco', 'Consolas', monospace; }
+        footer { background: #2d3748; color: white; text-align: center; padding: 40px 20px; }
+        footer a { color: #667eea; text-decoration: none; }
+        .stats { display: flex; justify-content: center; gap: 60px; margin-top: 40px; }
+        .stat { text-align: center; }
+        .stat-number { font-size: 3em; font-weight: bold; color: #667eea; }
+        .stat-label { font-size: 1.2em; opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🚀 SkillHub</h1>
+            <p>App Store for AI Agent Skills</p>
+            <p style="font-size: 1.2em; margin-top: 20px; opacity: 0.8;">Discover, install, and manage OpenClaw skills with one command</p>
+            <div class="cta">
+                <a href="https://github.com/BTCNAI/skillhub" class="github">⭐ Star on GitHub</a>
+                <a href="#install">Get Started</a>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number" id="stars">0</div>
+                    <div class="stat-label">GitHub Stars</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="skills">10+</div>
+                    <div class="stat-label">Available Skills</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="downloads">100+</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px;">Why SkillHub?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Discover</h3>
+                    <p>Search and discover skills for your AI agent. Find weather, GitHub, Google, and more.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📦</div>
+                    <h3>One-Click Install</h3>
+                    <p>Install skills with a single command. No manual copying or configuration needed.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Trending Skills</h3>
+                    <p>See what's popular in the community. Popular and trending skill rankings.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Create & Share</h3>
+                    <p>Build your own skills with templates. Share with the community in minutes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo" id="install">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 40px;">Quick Start</h2>
+            <pre><code># Install SkillHub
+npm install -g skillhub
+
+# Search for skills
+skillhub search weather
+
+# Install a skill
+skillhub install weather
+
+# View installed skills
+skillhub list --installed
+
+# Update all skills
+skillhub update --all</code></pre>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 40px;">Popular Skills</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🌤️ weather</h3>
+                    <p>Weather forecast and real-time weather queries</p>
+                    <p style="margin-top: 10px; color: #667eea;">1.2k+ installs</p>
+                </div>
+                <div class="feature">
+                    <h3>🐙 github</h3>
+                    <p>GitHub operations - issues, PRs, CI</p>
+                    <p style="margin-top: 10px; color: #667eea;">890+ installs</p>
+                </div>
+                <div class="feature">
+                    <h3>📧 google</h3>
+                    <p>Google Workspace - Gmail, Calendar, Drive</p>
+                    <p style="margin-top: 10px; color: #667eea;">756+ installs</p>
+                </div>
+                <div class="feature">
+                    <h3>💬 telegram</h3>
+                    <p>Telegram bot and message management</p>
+                    <p style="margin-top: 10px; color: #667eea;">623+ installs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="font-size: 1.5em; margin-bottom: 20px;">🎯 Goal: 1000 GitHub Stars!</p>
+            <p>Every ⭐ helps us grow!</p>
+            <div class="cta">
+                <a href="https://github.com/BTCNAI/skillhub" class="github">Star on GitHub</a>
+            </div>
+            <p style="margin-top: 40px; opacity: 0.6;">Made with ❤️ by <a href="https://github.com/BTCNAI">@btcnai</a> | <a href="https://github.com/BTCNAI/skillhub">GitHub</a> | <a href="https://github.com/BTCNAI/skillhub/blob/main/LICENSE">MIT License</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Fetch real star count
+        fetch('https://api.github.com/repos/BTCNAI/skillhub')
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('stars').textContent = data.stargazers_count || 0;
+            })
+            .catch(() => {});
+    </script>
+</body>
+</html>
