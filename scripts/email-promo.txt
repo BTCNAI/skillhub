@@ -1,0 +1,35 @@
+Subject: 🚀 SkillHub - Package Manager for OpenClaw AI Skills
+
+Hi,
+
+I just launched SkillHub - a package manager for OpenClaw AI skills.
+
+**Problem:** OpenClaw has a powerful skill system, but skills are scattered everywhere. No discovery, no easy installation, no version management.
+
+**Solution:** SkillHub makes it work like an App Store for AI agents.
+
+**Quick Start:**
+```bash
+npm install -g skillhub
+skillhub search weather
+skillhub install weather
+```
+
+**Features:**
+- 🔍 Search and discover skills
+- 📦 One-click install/update
+- 📊 Popular and trending rankings
+- 🛠️ Skill creation templates
+
+**GitHub:** https://github.com/BTCNAI/skillhub
+
+**Goal:** 1000 stars - every ⭐ helps!
+
+Would love your feedback!
+
+Best,
+@btcnai
+
+---
+
+P.S. SkillHub is built with Node.js and Commander.js. Open source under MIT license.
